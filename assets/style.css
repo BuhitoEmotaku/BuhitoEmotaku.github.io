@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+.header-principal {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7), rgb(4, 9, 30,0.7)), url(../images/backgrowned.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo__name {
+    padding: 40px 10px;
+}
+nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+nav b {
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 40px;
+    color: #fff;}
+nav a img{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 38px 50px;
+    position: relative;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 40px;
+    color: #fff;
+    
+}
+.nav-links ul li a:hover {
+    color: red;
+}
+.nav-links ul li::after{
+    content: "";
+    display: block;
+    background: red;
+    margin: auto;
+    width: 0%;
+    transition: 0.5s; 
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+    height: 3px;  
+}
+.logo__decoration::after{
+    content: "";
+    display: block;
+    background: red;
+    margin: auto;
+    width: 0%;
+    transition: 0.5s; 
+}
+.logo__decoration:hover::after {
+    width: 100%;
+    height: 3px;  
+}
+.logo__decoration::before{
+    content: "";
+    display: block;
+    background: red;
+    margin: auto;
+    width: 0%;
+    transition: 0.5s; 
+}
+.logo__decoration:hover::before {
+    width: 100%;
+    height: 3px;  
+}
+
+.main__content--first ul li {
+    list-style: none;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.main__content {
+    height: 60vh;
+    position: relative;
+    display: flex;
+
+
+}
+.main__content--first {
+    justify-content: space-between;
+    display: flex;
+
+
+}
+.main__content--first{
+    width: 40%;
+    height: 34vh;
+    position: relative;
+    padding: 15vh 6vh;
+
+}
+.main__content--first ul li {
+    padding: 15px;
+}
+.section {
+    color: white;
+    font-size: 100px;
+}
+.timeClock {
+    font-size: 200px;
+    text-align: center;
+    padding: 7vh;
+    color: white;
+    text-shadow: 0 0 9px #FF0000, 0 0 5px #0000FF;
+}
